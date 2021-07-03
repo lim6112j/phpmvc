@@ -1,0 +1,15 @@
+{
+    "name": "codeguru/htdocs",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "ben lim",
+            "email": "lim6112j@gmail.com"
+        }
+    ],
+    "require": {}
+}
