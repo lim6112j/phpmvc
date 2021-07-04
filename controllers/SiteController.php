@@ -3,33 +3,41 @@
 
 namespace app\controllers;
 
-use app\core\Application;
+use app\core\Controller;
 
 /**
  * Class SiteController
  * @package app\controllers
  */
-class SiteController
+class SiteController extends Controller
 {
+    /**
+     * SiteController constructor.
+     */
+    public function __construct()
+    {
+
+    }
+
     /**
      * @return mixed
      */
-    public static function home()
+    public function home()
     {
         $params = [
             'name' => 'ben lim'
         ];
-        return Application::$app->router->renderView('home', $params);
+        return $this->render('home', $params);
     }
     /**
      * @return string
      */
-    public static function handleContact(): string
+    public function handleContact(): string
     {
         return 'handling submitted data';
     }
-    public static function contact(): string
+    public function contact(): string
     {
-        return Application::$app->router->renderView('contact');
+        return $this->render('contact');
     }
 }
