@@ -4,6 +4,7 @@
 namespace app\controllers;
 
 use app\core\Controller;
+use app\core\Request;
 
 /**
  * Class SiteController
@@ -32,8 +33,13 @@ class SiteController extends Controller
     /**
      * @return string
      */
-    public function handleContact(): string
+    public function handleContact(Request $request): string
     {
+        $body = $request->getBody();
+        echo '<pre>';
+        var_dump($body);
+        echo '</pre>';
+        exit;
         return 'handling submitted data';
     }
     public function contact(): string

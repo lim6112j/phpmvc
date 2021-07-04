@@ -10,6 +10,7 @@ namespace app\core;
  */
 class Controller
 {
+    public string $layout = 'main';
     /**
      * @param $view
      * @param array $params
@@ -18,5 +19,13 @@ class Controller
     public function render($view, array $params=[])
     {
         return Application::$app->router->renderView($view, $params);
+    }
+
+    /**
+     * @param $layout
+     */
+    public function setLayout($layout)
+    {
+        $this->layout = $layout;
     }
 }
