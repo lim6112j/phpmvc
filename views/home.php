@@ -8,6 +8,6 @@
 //while ($R = db_fetch_assoc($result)) {
 //  array_push($notice_array, $R);
 //}
-
+echo "From Middleware Debug : {$data['test']}";
 ?>
 <h1>Home Page</h1>

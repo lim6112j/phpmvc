@@ -18,8 +18,7 @@ class DefaultController extends Controller
     public function home()
     {
         $params = [
-            'myData' => "private data",
-            'login_array' => $this->getMiddleWareData()
+            'data' => $this->getMiddleWareData()
         ];
         $this->setLayout('home');
         return $this->render('home', $params);
