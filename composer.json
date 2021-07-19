@@ -1,9 +1,13 @@
 {
-    "name": "codeguru/htdocs",
+    "name": "lim6112j/apicenter",
+    "description": "api center",
+    "type": "project",
     "autoload": {
         "psr-4": {
             "app\\": "./"
-        }
+        },
+        "files": [
+        ]
     },
     "authors": [
         {
@@ -11,5 +15,13 @@
             "email": "lim6112j@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=7.4",
+        "phpseclib/phpseclib": "^3.0",
+        "phpunit/phpunit": "^9.5",
+        "ext-pdo": "*",
+        "phpmailer/phpmailer": "^6.5",
+        "ext-mbstring": "*",
+        "ext-json": "*"
+    }
 }

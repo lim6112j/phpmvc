@@ -2,9 +2,6 @@
 
 namespace app\core;
 
-use app\controllers\AuthController;
-use app\controllers\SiteController;
-
 /**
  * Class Application
  * @package app\core
@@ -15,9 +12,8 @@ class Application {
     public Request $request;
     public Response $response;
     public static Application $app;
-    public static SiteController $siteController;
-    public static AuthController $authController;
-    public Controller $controller;
+    private Controller $controller;
+    public array $appMiddlewares=[];
     /**
      * Application constructor.
      * @param $rootPath
@@ -28,13 +24,15 @@ class Application {
         $this->request = new Request();
         $this->response = new Response();
         $this->router = new Router($this->request, $this->response);
-        self::$siteController = new SiteController();
-        self::$authController = new AuthController();
     }
     public function run() {
         echo $this->router->resolve();
     }
 
+    public function useMiddleware(string $middleware)
+    {
+        $this->appMiddlewares[] = $middleware;
+    }
     /**
      * @return Controller
      */

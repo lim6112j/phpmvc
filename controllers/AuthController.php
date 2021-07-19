@@ -4,6 +4,7 @@
 namespace app\controllers;
 use app\core\Controller;
 use app\core\Request;
+use app\middlewares\LoginMiddleware;
 
 /**
  * Class AuthController
@@ -11,6 +12,10 @@ use app\core\Request;
  */
 class AuthController extends Controller
 {
+//    public function __construct()
+//    {
+//        $this->registerMiddleware(LoginMiddleware::getInstance());
+//    }
     /**
      * @return mixed
      */

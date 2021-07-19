@@ -31,6 +31,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/register">Register</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/api/type_1/FraudSearch.php">Fraud Search type_1</a>
+                </li>
             </ul>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
