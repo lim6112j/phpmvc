@@ -1,0 +1,378 @@
+.wrap {
+    padding-top:80px;
+}
+.top_box {
+    background: #1e1e24;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index: 10000;
+}
+
+.top_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+}
+
+.logo_box {
+    float: left;
+    margin-top:27px;
+}
+
+.logo_box img {
+    width: 320px;
+}
+
+.top_nav {
+    float: right;
+    position: relative;
+    z-index: 100;
+}
+
+.top_nav > ul {
+    height:80px;
+    box-sizing: border-box;
+}
+
+.top_nav > ul > li {
+    float: left;
+    width:140px;
+    margin-top:20px;
+    line-height: 40px;
+    height:40px;
+    text-align: center;
+}
+
+.top_nav > ul > li > a {
+    color: #FFF;
+    font-size: 18px;
+    font-family: 'Nanum Barun Gothic Light';
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: skew(0.03deg);
+    transition-duration: 0.3s;
+}
+
+.top_nav > ul > li > a:hover {
+    color: #039be6;
+
+}
+
+.top_nav > ul > li > ul {
+    transition-duration: 200ms;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+.top_nav > ul > li > ul > li {
+    height:50px;
+}
+.top_nav > ul > li > ul > li > a {
+    color:#999;
+    height:40px;
+    line-height: 40px;
+    transition-duration: 0.3s;
+}
+.top_nav > ul > li > ul > li > a:hover {
+    color: #039be6;
+}
+.nav_bg_box {
+    opacity: 0;
+    width:100%;
+    height: 0px;
+    position: fixed;
+    top:80px;
+    background: #FFF;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition-duration: 200ms;
+    z-index: 1;
+}
+.nav_bg_box.active {opacity: 1; height: 230px;}
+.top_nav > ul > li > ul.active {opacity: 1; height:auto; padding-top:40px;}
+.top_login_btn {
+    float:right;
+    height:30px;
+    padding:0 15px;
+    margin-top:25px;
+    background:#FFF;
+}
+.top_login_btn a {
+    display: block;
+    width:100%;
+    height:30px;
+    line-height: 30px;
+    color:#1e1e24;
+    font-weight: 600;
+    font-size: 18px;
+}
+.member_name_01 {
+    float:right;
+    height:30px;
+    padding:0 15px;
+    margin-top:25px;
+    position: relative;
+}
+.member_name_01 img {width:24px; margin-top:5px; cursor: pointer;}
+.member_name_01 > a {
+    display: block;
+    width:100%;
+    height:30px;
+    color:#039be6;
+    font-size: 18px;
+    line-height: 30px;
+}
+.member_name_01 > ul {
+    width: 120px;
+    height:0px;
+    background:#FFF;
+    position: absolute;
+    top: 40px;
+    border: 1px solid #ccc;
+    transition-duration: 200ms;
+    opacity: 0;
+    overflow: hidden;
+}
+.member_name_01 > ul > li {
+    width:100%;
+    padding-left: 15px;
+    box-sizing: border-box;
+    font-size:15px;
+    font-weight: normal;
+    height:40px;
+    line-height: 40px;
+}
+.member_name_01 > ul > li:first-child {border-bottom:1px solid #ccc;}
+.member_name_01 > ul > li:first-child p {
+  line-height: 40px; color:#039be6; font-size: 18px; width:80px; overflow: hidden; text-overflow: ellipsis; word-wrap: normal; white-space: nowrap; float: left;}
+.member_name_01 > ul > li:first-child span {line-height: 40px; font-size:18px; color:#039be6; float: left;}
+.member_name_01 > ul > li > a{
+    color:#1e1e24;
+}
+.member_name_01 > ul.active {
+    opacity: 1;
+    z-index: 1000;
+    height: 120px;
+
+}
+.hero_area {
+    width:100%;
+    background:url('../img/bg_01.png') center/cover no-repeat;
+}
+
+.hero_text_box {
+    width: 1200px;
+    margin:0 auto;
+}
+.h_text_01 {
+    font-size:35px;
+    font-family: 'Nanum Barun Gothic Light';
+    text-align: center;
+    color:#FFF;
+    padding-top:120px;
+}
+.h_text_02 {
+    font-size:60px;
+    font-family: 'Nanum Barun Gothic bold';
+    text-align: center;
+    color:#FFF;
+    padding-top:35px;
+}
+.h_text_03 {
+    font-size:30px;
+    font-family: 'Nanum Barun Gothic Light';
+    text-align: center;
+    color:#FFF;
+    padding-top:70px;
+    padding-bottom: 120px;
+}
+
+.main_cont_box {
+    margin:0 auto;
+    width:1200px;
+    overflow: hidden;
+}
+.main_cont_01, .main_cont_02{
+    padding-top:150px;
+}
+.main_cont_01 {overflow: hidden;}
+.main_cont_02 {padding-bottom:150px;}
+.title_01 {
+    font-size:40px;
+    color:#333;
+    font-weight: bold;
+}
+.title_01 span {
+    color:rgba(0,0,0,0.2);
+    font-size:25px;
+    font-weight: normal;
+    font-family: 'Nanum Barun Gothic';
+    padding-left:20px;
+    vertical-align: 0px;
+}
+
+.cont_box_01{
+    width:30%;
+    margin-right:5%;
+    float:left;
+}
+
+.cont_box_02{
+    width:30%;
+    float:left;
+    background: #fff;
+    height: 265px;
+    margin-top: 80px;
+}
+
+.title_02 {
+    font-size:30px;
+    font-weight: bold;
+    color:#333;
+    padding-top:95px;
+}
+
+.title_02 img {
+    width:40px;
+    vertical-align: bottom;
+    margin-left:20px;
+}
+.main_iocn_02 img {
+    width:45px;
+    vertical-align: -2px;
+}
+.main_text_01 {
+    margin-top:50px;
+    color:#666;
+    font-size:16px;
+    letter-spacing: 0;
+    line-height:25px;
+}
+.notice_table {
+    width:100%;
+    margin-top:95px;
+}
+.notice_table th {
+    width:1000px;
+    border-bottom:1px solid #ccc;
+    text-align: left;
+}
+.notice_table th p {
+    width:1000px;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size:25px;
+    color:#666;
+    padding: 15px 0;
+    font-weight: normal;
+}
+.notice_table th span {font-weight: bold;}
+.notice_table td {
+    width:200px;
+    text-align: right;
+    font-size:20px;
+    color:#aaa;
+    padding:18px 0;
+    border-bottom: 1px solid #ccc;
+}
+.more_view_btn {overflow: hidden;}
+.more_view_btn p {
+    width:100px;
+    float:right;
+    text-align: right;
+    cursor: pointer;
+    font-size:25px;
+    font-weight: bold;
+    color:#333;
+    padding-top:25px;
+}
+
+
+.footer {
+    background: #1e1e24;
+}
+
+.footer_wrap {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.bottom_logo_box {
+    width: 320px;
+    float: left;
+    padding-top: 40px;
+}
+
+.copyright {
+    font-size: 14px;
+    font-family: 'Nanum barun Gothic Light';
+    color: #ccc;
+    padding-top:10px;
+    text-align: center;
+}
+
+.bottom_nav_box {
+    float: right;
+    padding: 40px 0 30px 0;
+}
+
+.bottom_nav_box>ul {
+    height: 185px;
+}
+
+.bottom_nav_box>ul>li {
+    height: 30px;
+    line-height: 30px;
+    margin-right: 50px;
+    font-size: 16px;
+    float: left;
+}
+
+.bottom_nav_box>ul>li:last-child {
+    margin-right: 0;
+}
+
+.bottom_nav_box>ul>li>a {
+    color: #ddd;
+}
+
+.bottom_nav_box>ul>li>ul>li {
+    padding-top: 10px;
+}
+
+.bottom_nav_box>ul>li>ul>li>a {
+    font-family: 'Nanum Barun Gothic Light';
+    font-size: 14px;
+    color: #aaa;
+}
+
+.top_navi_btn {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 100;
+    width: 62px;
+    height: 59px;
+    background: #039be6;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition-duration: 200ms;
+    z-index: -1000;
+
+}
+
+.top_navi_btn.active {
+    opacity: 1;
+    z-index: 1000;
+}
+
+.footer_bottom_menu {width:100%; padding:35px 0; clear: both;}
+.footer_bottom_menu ul {height:20px;padding-top:5px; margin:0 auto; width:277px;}
+.footer_bottom_menu ul li {padding:0 10px; float:left; text-align: center; height:10px; box-sizing: border-box; border-right: 1px solid rgb(98, 98, 104); line-height: 10px;}
+.footer_bottom_menu ul li a {font-size:15px; color:#FFF; display: block; width:100%;  }
+.footer_bold {font-family: 'Nanum Barun Gothic bold'!important;}
