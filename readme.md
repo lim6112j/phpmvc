@@ -1,4 +1,6 @@
 # TheCheat Api Center
+## 템플릿 사용 프로젝트 시작
+* composer create-project -s dev lim6112j/apicenter newProject
 ## 새로운 페이지 추가 방법 
   * [document root]/index.php에 추가할 페이지 route를 추가한다. 아래와 같이 하면 /newpage, /newpage.php 두가지로 접속이 가능하다.
   ```
