@@ -10,6 +10,7 @@
 ```
 composer create-project -s dev lim6112j/apicenter newProject
 ```
+* ./newProject/public 폴더를 document root로 서버 설정.
 * terminal 에서 newProject폴더에 들어가 composer update  실행
 ```shell
 composer update
@@ -18,11 +19,13 @@ composer update
 
 ## 새로운 페이지 추가 방법 
   * [document root]/index.php에 추가할 페이지 route를 추가한다. 아래와 같이 하면 /newpage, /newpage.php 두가지로 접속이 가능하다.
-  ```
+  
+```
   // http://localhost/newpage로 요청이오면 DefaultController에 있는 newpage 함수를 실행하라.
   $app->router->get('/newpage', [DefaultController::class, 'newpage']); 
   $app->router->get('/newpage.php', [DefaultController::class, 'newpage']);
   ```
+
   * DefaultController.php를 열어 아래와 같이 함수를 추가한다.
   ```
       public function newpage(): string
