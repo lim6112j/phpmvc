@@ -108,4 +108,8 @@ class AuthMiddleware extends BaseMiddleware
 
 ## middleware 는 BaseMiddleware를 상속받아 singeton으로 사용함. 
  * 하나의 request에 대해 response가 만들어지기전 api 등을 호출하게되면 controller가 달라지면서 middleware를 새로 injecting하므로 다시 instance화 하는 것을 방지한다.
-
+ * middle웨어는 반드시 array를 리턴해야한다. 리턴할 값이 없으면 아래와 같이라도 써주자.
+```phpt
+...
+return [];
+```
