@@ -62,7 +62,7 @@ $app->router->get('/', [DefaultController::class, 'home'],[LoginMiddleware::clas
   ```
 
   * 이제 DefaultController가 관리하는 api는 NewMiddleware의 execute함수가 실행된 이후에 response 를 보낸다.
-  * 모든 middleware는 리턴값이 array이며 해당 어레이를 데이터 소스로 쓸수 있다.
+  * 모든 middleware는 데이터 소스로 쓸수도 있다.
 
 ```
 class AuthMiddleware extends BaseMiddleware
@@ -87,7 +87,7 @@ class AuthMiddleware extends BaseMiddleware
 }
 ```
   * 위소스는 $login_array를 페이지에서 사용할 수 있다.
-  *  execute 함수 내에 redirection을 넣어 인증용도로 사용할 수도 있다.
+  *  execute 함수 내에 redirection 넣어 인증용도로 사용할 수도 있다.
 ```phpt
     public function execute($data=[]):array
     {
@@ -98,9 +98,10 @@ class AuthMiddleware extends BaseMiddleware
 
 ```
 ## Database관련 query추가 
+  * DB setting data는 config.php에서 가져온다.
   * 모든 DB 관련함수는 /models 폴더안에 모여있다.
   * $db variable은 singleton으로 만들어져 resquest-> response가 끝날 때까지 하나를 가지고 재사용한다.
 
-## middleware 는 BaseMiddleware를 상속받아 사용함. 
+## middleware 는 BaseMiddleware를 상속받아 singeton으로 사용함. 
  * 하나의 request에 대해 response가 만들어지기전 api 등을 호출하게되면 controller가 달라지면서 middleware를 새로 injecting하므로 다시 instance화 하는 것을 방지한다.
 
