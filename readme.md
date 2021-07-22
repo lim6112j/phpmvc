@@ -59,11 +59,12 @@ composer update
     }
   }
   ```
-  * index.php의 routing 정보에 아래와 같이 추가해준다.
+  * index.php의 routing 정보에 아래와 같이 추가해준다. 
   ```
 $app->router->get('/', [DefaultController::class, 'home'],[LoginMiddleware::class, NewMiddleware::class]);
   ```
 
+  * 위의 코드에서 LoginMiddleware에서 생성한 데이터를 NewMiddleware에서 사용할 수 있다. 왼쪽에서 오른쪽 방향으로 데이터 전달.
   * 이제 DefaultController가 관리하는 api는 NewMiddleware의 execute함수가 실행된 이후에 response 를 보낸다.
   * 모든 middleware는 데이터 소스로 쓸수도 있다.
 
