@@ -14,7 +14,7 @@ class Controller
 {
     protected const LOGINCOMMONDATA = 'login_array';
     protected const AUTHCOMMONDATA = 'auth_array';
-    public string $layout = 'main';
+    public string $layout = 'default';
     protected array $middlewares = [];
     protected array $middleWareData = [];
     /**

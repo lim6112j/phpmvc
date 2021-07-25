@@ -1,0 +1,59 @@
+{
+  "name": "phpmvc",
+  "version": "1.0.0",
+  "private": true,
+  "description": "* pretty url 세팅을 위해 rewritable 옵션 enable * .htaccess파일 생성 * document root에 .htaccess파일 배치 * 서버 따라 설정 다를 수 있음. ### 템플릿 사용 프로젝트 시작 * 서버 www, htdocs 등 serving 가능한 폴더로 이동하여 아래 명령 실행. (newProject에 자신의 프로젝트명을 작성) ``` composer create-project -s dev lim6112j/apicenter newProject ``` * ./newProject/public 폴더를 document root로 서버 설정. * terminal 에서 newProject폴더에 들어가 composer update  실행 ```shell composer update ``` * localhost  실행 여부 확인.",
+  "author": "",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "vue": "^2.6.14"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "_id": "phpmvc@1.0.0",
+  "bugs": {
+    "url": "https://github.com/lim6112j/phpmvc/issues"
+  },
+  "homepage": "https://github.com/lim6112j/phpmvc#readme",
+  "license": "ISC",
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lim6112j/phpmvc.git"
+  }
+}

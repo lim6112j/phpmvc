@@ -3,17 +3,21 @@
 ### 서버 세팅
 * pretty url 세팅을 위해 rewritable 옵션 enable
 * .htaccess파일 생성
-* document root에 .htaccess파일 배치
+* public 폴더에 .htaccess파일 배치
 * 서버 따라 설정 다를 수 있음.
 ### 템플릿 사용 프로젝트 시작
+* composer 설치
+* node 설치
 * 서버 www, htdocs 등 serving 가능한 폴더로 이동하여 아래 명령 실행. (newProject에 자신의 프로젝트명을 작성)
 ```
 composer create-project -s dev lim6112j/apicenter newProject
 ```
-* ./newProject/public 폴더를 document root로 서버 설정.
-* terminal 에서 newProject폴더에 들어가 composer update  실행
+* ./newProject/dist 폴더를 document root로 서버 설정. (npm run build 후 자동 생성됨.)
+* terminal 에서 newProject폴더에 들어가 composer update, npm  실행
 ```shell
 composer update
+npm install
+npm run build
 ```
 * localhost  실행 여부 확인.
 

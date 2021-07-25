@@ -11,3 +11,4 @@
 echo "From Middleware Debug : {$data['test']}";
 ?>
 <h1>Home Page</h1>
+<div id="app"></div>

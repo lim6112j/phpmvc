@@ -20,7 +20,7 @@ class DefaultController extends Controller
         $params = [
             'data' => $this->getMiddleWareData()
         ];
-        $this->setLayout('home');
+        // $this->setLayout('default');
         return $this->render('home', $params);
     }
 }

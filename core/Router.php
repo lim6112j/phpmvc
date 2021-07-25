@@ -102,10 +102,10 @@ class Router {
                 return json_encode($result);
             }
         }
-//        $layoutContent = $this->layoutContent();
-//        $viewContent = $this->renderOnlyView($view, $params);
-//        return str_replace('{{content}}', $viewContent, $layoutContent);
-        return $this->renderOnlyView($view, $params);
+       $layoutContent = $this->layoutContent();
+       $viewContent = $this->renderOnlyView($view, $params);
+       return str_replace('{{content}}', $viewContent, $layoutContent);
+        // return $this->renderOnlyView($view, $params);
     }
 
     /**
